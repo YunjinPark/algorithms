@@ -1,4 +1,4 @@
-## data structures and algorithms 
+## data structures and algorithms Practice
 
 
 | category |  name     | question | answer | note |
@@ -20,3 +20,14 @@
 |hash||[leetcode:]()|||
 |hash||[leetcode:]()|||
 |hash||[leetcode:]()|||
+
+## data structures and algorithms 
+
+| keyword | __ | __  |
+|------|------|------|
+||||
+||||
+|heap|||
+|hash|||
+||||
+||||
