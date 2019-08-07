@@ -1,3 +1,15 @@
+## data structures and algorithms 
+
+| keyword | __ | note  |
+|------|------|------|
+||||
+||||
+|heap||O|
+|hash|||
+||||
+||||
+
+
 ## data structures and algorithms Practice
 
 
@@ -21,13 +33,3 @@
 |hash||[leetcode:]()|||
 |hash||[leetcode:]()|||
 
-## data structures and algorithms 
-
-| keyword | __ | __  |
-|------|------|------|
-||||
-||||
-|heap|||
-|hash|||
-||||
-||||
