@@ -1,0 +1,23 @@
+class Node:
+    def __init__(self, val, neighbors, visit=False):
+        self.val = val
+        self.neighbors = neighbors        
+
+from collections import defaultdict, deque
+
+class Solution:
+    def cloneGraph(self, node: 'Node') -> 'Node':
+        d = defaultdict(lambda: Node(0, []))
+        q = deque()
+        q.append(node)
+    
+        while (q):
+            n = q.popleft() 
+            d[n].val = n.val
+            if n.neighbors:
+                for i in n.neighbors:
+                    if i not in d :
+                        q.append(i)
+                    d[n].neighbors.append(d[i])
+        return d[node]
+    
