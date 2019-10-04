@@ -1,7 +1,7 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         '''
-        time: O(log(nums))
+        time: O(log(len(nums)))
         space: O(1)
         '''
         if not nums: return -1
@@ -34,4 +34,3 @@ class Solution:
         tmp = bs(0, m, target)
         if tmp != -1: return tmp
         return bs(m + 1, len(nums) - 1, target)
-
