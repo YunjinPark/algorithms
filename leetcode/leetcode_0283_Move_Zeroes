@@ -1,0 +1,31 @@
+class Solution:
+    def moveZeroes_1(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        # i = 0 , j = 1 
+        i, j = 0, 0
+        n = len(nums)
+        while (j < n-1 and i < n-1):
+            while (nums[i] != 0 and i<n-1):
+                i += 1
+            j = min(i + 1, n-1)
+            while (nums[j] == 0 and j<n-1):
+                j += 1
+            if nums[i] == 0 and nums[j] !=0 and i < j:
+                nums[i], nums[j] = nums[j], nums[i]
+                
+    def moveZeroes_2(self, nums: List[int]) -> None:
+        n = len(nums)
+        nums[:] = [i for i in nums if i != 0]
+        nums += [0 for _ in range(n-len(nums))]
+        
+    def moveZeroes_3(self, nums: List[int]) -> None:
+        zero, n = 0, 0
+        for num in nums:
+            if num: 
+                nums[zero] = num
+                zero += 1
+        for i in range(zero, len(nums)):
+            nums[i] = 0    
+        
