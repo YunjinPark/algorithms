@@ -1,7 +1,7 @@
 class Solution:
     def isAlienSorted_1(self, words: List[str], order: str) -> bool:
         """
-        time: O(N) , space:O(N)
+        time: O(N) , space:O(1)
         """
         dic = {s: i for i, s in enumerate(order)}
 
