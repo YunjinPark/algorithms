@@ -4,7 +4,7 @@ from collections import defaultdict
 class Solution:
     def longestStrChain(self, words: List[str]) -> int:
         """
-        time: O(N), space: O(N)
+        time: O(NlogN), space: O(N)
         """
         dic = defaultdict(lambda: defaultdict(int))
 
