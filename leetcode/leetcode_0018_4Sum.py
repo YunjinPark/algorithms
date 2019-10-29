@@ -2,7 +2,8 @@ from collections import defaultdict, Counter
 
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
-        ''' time: O(N^3) space:O(N^2) '''
+        ''' best time: O(N^2) worst time: O(N^4)
+        space:O(N^2) '''
         n = len(nums)
         d = defaultdict(set)
         res = set()
