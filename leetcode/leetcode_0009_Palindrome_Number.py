@@ -6,3 +6,4 @@ class Solution:
         for i in range(lenX // 2):
             if (x // (10 ** (lenX - 1 - i))) % 10 != (x // (10 ** i)) % 10: return False
         return True
+
